@@ -23,8 +23,8 @@ public interface Library {
      List<Book> findBooksByAuthor(String author);
      void borrowBook(int bookId, int userId);
      void returnBook(int bookId);
-    void addUser(User user);
-    List<User> listUsers();
-    void deleteUser(int id);
-    void updateUser(int id, String newName, String newEmail);
+     void addUser(User user);
+     List<User> listUsers();
+     void deleteUser(int id);
+     void updateUser(int id, String newName, String newEmail);
 }
