@@ -24,16 +24,20 @@ public class LibraryImpl implements Library{
         return bookList;
     }
     @Override
-    public void deleteBook(int id) {
-
-        Book bookToRemove = null;
+    public void deleteBook(int id) {  //2
+        Book bookToRemove = null;    //null
 
         for (Book book : bookList) {
-            if (bookToRemove != null) {
-                bookList.remove(bookToRemove);
-            } else {
-                System.out.println("Book not found.");
+            if (book.getId() == id) { //2
+                bookToRemove = book; //bookToRemove=2
+                break;
             }
+        }
+
+        if (bookToRemove != null) {
+            bookList.remove(bookToRemove);
+        } else {
+            System.out.println("Book not found.");
         }
     }
 
