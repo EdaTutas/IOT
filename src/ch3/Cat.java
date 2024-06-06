@@ -7,7 +7,7 @@ public class Cat extends Mammal implements Walkable{
 
     @Override
     public void makeSound(){
-        System.out.println(getName() + "meows!");
+        System.out.println(getName() + " meows!");
     }
 
     @Override

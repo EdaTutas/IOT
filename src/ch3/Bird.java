@@ -13,11 +13,11 @@ public class Bird extends Animal implements Flyable,Walkable{
 
     @Override
     public void fly() {
-        System.out.println(getName() + "is flying");
+        System.out.println(getName() + " is flying");
     }
 
     @Override
     public void walk() {
-        System.out.println(getName() + "is walking on 2 legs");
+        System.out.println(getName() + " is walking on 2 legs");
     }
 }
